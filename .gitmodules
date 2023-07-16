@@ -1,0 +1,3 @@
+[submodule "board-project"]
+	path = board-project
+	url = https://github.com/wlsdks/board-project.git
