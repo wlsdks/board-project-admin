@@ -4,10 +4,10 @@ management:
     enabled-by-default: false # 1. Endpoint all disable
     jmx:
       exposure:
-        exclude: *
+        exclude: "*"
     web:
       exposure:
-        include: info, health
+        include: "info, health"
   endpoint:
     info:
       enabled: true # 2. Enable specific endpoints
