@@ -1,7 +1,5 @@
 package com.fastcampus.boardprojectadmin.config;
 
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -19,20 +17,14 @@ public class ThymeleafConfig {
             Thymeleaf3Properties thymeleaf3Properties
     ) {
         // 원래있던 decoupled 로직에 설정을 추가해준 코드다.
-        defaultTemplateResolver.setUseDecoupledLogic(thymeleaf3Properties.isDecoupledLogic());
+        defaultTemplateResolver.setUseDecoupledLogic(thymeleaf3Properties.decoupledLogic());
 
         return defaultTemplateResolver;
     }
 
-    @RequiredArgsConstructor
-    @Getter
-//    @ConstructorBinding // 3.x.x 버전부터는 필드에 적용시킨 이 어노테이션은 불필요하다고 한다.
-    @ConfigurationProperties("spring.thymeleaf3") // thymeleaf3 로 yml 파일에서 설정을 시작한다는 의미이다.
-    public static class Thymeleaf3Properties {
-        /**
-         * Use Thymeleaf 3 Decoupled Logic
-         */
-        private final boolean decoupledLogic;
-    }
+    // record를 사용하여 깔끔하게 처리했다.
+    // thymeleaf3 로 yml 파일에서 설정을 시작한다는 의미이다.
+    @ConfigurationProperties("spring.thymeleaf3")
+    public record Thymeleaf3Properties(boolean decoupledLogic) {}
 
 }
