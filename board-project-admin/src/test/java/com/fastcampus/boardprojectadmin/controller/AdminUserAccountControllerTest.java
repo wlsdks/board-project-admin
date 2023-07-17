@@ -15,7 +15,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @DisplayName("View 컨트롤러 - 어드민 회원")
 @Import(SecurityConfig.class)
-@WebMvcTest(AdminUserAccountControllerTest.class)
+@WebMvcTest(AdminUserAccountController.class)
 class AdminUserAccountControllerTest {
 
     // mvc 테스트에서 mockMvc를 많이 사용한다.

@@ -15,7 +15,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @DisplayName("View 컨트롤러 - 관리자 유저관리")
 @Import(SecurityConfig.class)
-@WebMvcTest(UserAccountManagementControllerTest.class)
+@WebMvcTest(UserAccountManagementController.class)
 class UserAccountManagementControllerTest {
 
     // mvc 테스트에서 mockMvc를 많이 사용한다.
@@ -38,7 +38,7 @@ class UserAccountManagementControllerTest {
         mvc.perform(get("/management/user-accounts"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_HTML))
-                .andExpect(view().name("management/user-accounts"));
+                .andExpect(view().name("management/userAccounts"));
 
     }
 

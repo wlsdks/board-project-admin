@@ -13,7 +13,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @DisplayName("View 컨트롤러 - root 뷰")
 @Import(SecurityConfig.class)
-@WebMvcTest(UserAccountManagementControllerTest.class)
+@WebMvcTest(MainController.class)
 class MainControllerTest {
 
     // mvc 테스트에서 mockMvc를 많이 사용한다.
