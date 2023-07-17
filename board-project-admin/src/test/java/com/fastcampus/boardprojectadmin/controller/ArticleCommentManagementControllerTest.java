@@ -25,7 +25,7 @@ class ArticleCommentManagementControllerTest {
         this.mvc = mvc;
     }
 
-    @DisplayName("[View][GET] 게시글 관리 페이지 - 정상 호출")
+    @DisplayName("[View][GET] 게시글 댓글 관리 페이지 - 정상 호출")
     @Test
     void test1() throws Exception {
         //given

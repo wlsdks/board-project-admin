@@ -11,7 +11,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-@DisplayName("View 컨트롤러 - 관리자 유저관리")
+@DisplayName("View 컨트롤러 - root 뷰")
 @Import(SecurityConfig.class)
 @WebMvcTest(UserAccountManagementControllerTest.class)
 class MainControllerTest {
@@ -23,7 +23,7 @@ class MainControllerTest {
         this.mvc = mvc;
     }
 
-    @DisplayName("[View][GET] 게시글 관리 페이지 - 정상 호출")
+    @DisplayName("[View][GET] 메인 페이지 - 정상 호출")
     @Test
     void test1() throws Exception {
         //given
