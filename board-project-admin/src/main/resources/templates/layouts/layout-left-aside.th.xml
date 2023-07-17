@@ -2,6 +2,7 @@
 <thlogic>
   <attr sel="#admin-logo-link" th:href="@{/}" />
   <attr sel="#user-profile" th:href="@{#}" sec:authorize="isAuthenticated()" sec:authentication="principal.nickname" />
+<!--  TODO: #request 방식은 3.xx 버전부터 사라졌다고함.. -->
   <attr sel="#management-category" th:classappend="${#request.requestURI.startsWith('/management')} ? 'active'" />
   <attr
       sel="#article-management"
