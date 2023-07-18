@@ -2,11 +2,11 @@ package com.fastcampus.boardprojectadmin.domain;
 
 import com.fastcampus.boardprojectadmin.domain.constant.RoleType;
 import com.fastcampus.boardprojectadmin.domain.converter.RoleTypesConverter;
-import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import javax.persistence.*;
 import java.util.Collection;
 import java.util.LinkedHashSet;
 import java.util.Objects;
