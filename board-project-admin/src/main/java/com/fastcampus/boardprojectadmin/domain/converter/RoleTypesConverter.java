@@ -1,9 +1,9 @@
 package com.fastcampus.boardprojectadmin.domain.converter;
 
 import com.fastcampus.boardprojectadmin.domain.constant.RoleType;
-import jakarta.persistence.AttributeConverter;
-import jakarta.persistence.Converter;
 
+import javax.persistence.AttributeConverter;
+import javax.persistence.Converter;
 import java.util.Arrays;
 import java.util.Set;
 import java.util.stream.Collectors;
