@@ -3,7 +3,7 @@ management.endpoints.web.exposure.include: "*"
 
 logging:
   level:
-    com.fastcampus.projectboardadmin: debug
+    com.fastcampus.boardprojectadmin: debug
     org.springframework.web.servlet: debug
     org.hibernate.type.descriptor.sql.BasicBinder: trace
     org.springframework.web.client.RestTemplate: debug
