@@ -42,6 +42,7 @@ class ArticleManagementControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_HTML))
                 .andExpect(view().name("management/articles"));
-
     }
+
+
 }

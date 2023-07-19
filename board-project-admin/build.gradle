@@ -32,9 +32,6 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'
 
-    // Swagger 추가 , JavaDoc기능 추가
-    annotationProcessor 'com.github.therapi:therapi-runtime-javadoc-scribe:0.15.0'
-
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
